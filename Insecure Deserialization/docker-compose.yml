@@ -1,0 +1,34 @@
+version: "3.6"
+
+services:
+  lab1:
+    build: ./lab1
+    ports:
+      - "9031:80"
+    volumes: 
+      - ./lab1/src/:/var/www/html/
+  lab2:
+    build: ./lab2
+    ports:
+      - "9032:80"
+    volumes: 
+      - ./lab2/src/:/var/www/html/
+  lab3:
+    build: ./lab3
+    ports:
+      - "9033:80"
+    volumes: 
+      - ./lab3/src/:/var/www/html/
+  lab4:
+    build: ./lab4
+    ports:
+      - "9034:80"
+    volumes: 
+      - ./lab4/src/:/var/www/html/
+  lab5:
+    build: ./lab5
+    ports:
+      - "9035:80"
+    volumes: 
+      - ./lab5/src/:/var/www/html/
+

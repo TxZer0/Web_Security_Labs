@@ -1,0 +1,12 @@
+<?php
+$host = 'db'; 
+$dbname = 'sql_db'; 
+$db_user = 'db_user';  
+$db_password = 'db_password';   
+
+try {
+    $pdo = new PDO("mysql:host=$host;dbname=$dbname", $db_user, $db_password);
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (PDOException $e) {
+    die("Database connection failed: " . $e->getMessage());
+}

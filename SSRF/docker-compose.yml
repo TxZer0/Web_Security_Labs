@@ -1,0 +1,35 @@
+version: '3.6'
+
+services:
+  lab1:
+    build: ./lab1
+    ports:
+      - "8091:80"            
+    volumes:
+      - ./lab1/src:/var/www/html 
+    restart: unless-stopped         
+
+  lab2:
+    build: ./lab2
+    ports:
+      - "8092:80"           
+    volumes:
+      - ./lab2/src:/var/www/html 
+    restart: unless-stopped       
+
+  lab3:
+    build: ./lab3
+    ports:
+      - "8093:80"            
+    volumes:
+      - ./lab3/src:/var/www/html 
+    restart: unless-stopped     
+
+  lab4:
+    build: ./lab4
+    ports:
+      - "8094:80"            
+    volumes:
+      - ./lab4/src:/var/www/html 
+    restart: unless-stopped    
+

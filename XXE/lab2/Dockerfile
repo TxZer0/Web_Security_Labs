@@ -1,0 +1,11 @@
+FROM php:7.2-apache
+
+RUN docker-php-ext-install mysqli pdo pdo_mysql
+
+WORKDIR /var/www/html/
+
+COPY ./src .
+
+RUN echo "allow_url_fopen = On" >> /usr/local/etc/php/conf.d/docker-php.ini
+
+

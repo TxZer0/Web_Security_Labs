@@ -1,0 +1,18 @@
+version: '3.6'
+
+services:
+  lab1:
+    build: ./lab1
+    ports:
+      - "9011:80"
+    volumes:
+      - ./lab1/src:/var/www/html
+    restart: always
+
+  lab2:
+    build: ./lab2
+    ports:
+      - "9012:80"
+    volumes:
+      - ./lab2/src:/var/www/html
+    restart: always

@@ -1,0 +1,26 @@
+version: "3.6"
+services:
+  lab1:
+    build: ./lab1
+    volumes:
+      - "./lab1/src/:/var/www/html/"
+    ports:
+      - 8061:80
+  lab2:
+    build: ./lab2
+    volumes:
+      - "./lab2/src/:/var/www/html/"
+    ports:
+      - 8062:80
+  lab3:
+    build: ./lab3
+    volumes:
+      - "./lab3/src/:/var/www/html/"
+    ports:
+      - 8063:80
+  lab4:
+    build: ./lab4
+    volumes:
+      - "./lab4/src/:/var/www/html/"
+    ports:
+      - 8064:80

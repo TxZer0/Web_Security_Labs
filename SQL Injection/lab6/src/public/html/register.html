@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <link rel="stylesheet" href="public/css/style.css">
+</head>
+<body>
+
+    <div class="register-container">
+        <form class="register-form" method="post">
+            <h2>Register</h2>
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+            <div class="input-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="Re-enter your password" required>
+            </div>
+            <span>
+                <?php if (isset($message)) echo $message;?>
+              </span>
+            <div class="form-actions">
+                <button type="submit">Register</button>
+            </div>
+            <p class="redirect-login">
+                Already have an account? <a href="login.php">Login here</a>.
+            </p>
+        </form>
+    </div>
+
+</body>
+</html>

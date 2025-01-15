@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+</head>
+<body>
+    <h1>Comment</h1>
+    <div id="commentsSection"></div>
+    <textarea id="userComment" placeholder="Write a comment..."></textarea>
+    <button id="submitComment">Submit</button>
+
+    <script>
+        const comments = [];
+        document.getElementById("submitComment").addEventListener("click", () => {
+            const comment = document.getElementById("userComment").value;
+            comments.push(comment);
+            displayComments();
+        });
+
+        function displayComments() {
+            const section = document.getElementById("commentsSection");
+            section.innerHTML = comments.map(comment => `<p>${comment}</p>`).join('');
+        }
+    </script>
+</body>
+</html>

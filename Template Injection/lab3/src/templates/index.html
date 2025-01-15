@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h1>Caesar Cipher</h1>
+    <form method="POST" action="/">
+        <label for="text">Enter:</label><br>
+        <input type="text" id="text" name="text" required><br><br>
+        <select id="shift" name="shift" required>
+            % for i in range(1, 27): 
+                <option value="${i}">${i}</option>
+            % endfor
+        </select><br><br>
+        <button type="submit" name="action" value="encrypt">Encrypt</button>
+        <button type="submit" name="action" value="decrypt">Decrypt</button>
+    </form>
+    <div>
+        ${result}
+    </div>
+</body>
+</html>

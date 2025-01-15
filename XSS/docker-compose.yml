@@ -1,0 +1,54 @@
+version: '3.6'
+
+services:
+  lab1:
+    build: ./lab1
+    volumes:
+      - ./lab1/src:/app/src
+    ports:
+      - "9001:9000"
+    command: npm start
+    restart: always
+  lab2:
+    build: ./lab2
+    volumes:
+      - ./lab2/src:/app/src
+    ports:
+      - "9002:9000"
+    command: npm start
+    restart: always
+  lab3:
+    build: ./lab3
+    volumes:
+      - ./lab3/src:/app/src
+    ports:
+      - "9003:9000"
+    command: npm start
+    restart: always
+  lab4:
+    build: ./lab4
+    volumes:
+      - ./lab4/src:/app/src
+    ports:
+      - "9004:9000"
+    command: npm start
+    restart: always
+  lab5:
+    build: ./lab5
+    volumes:
+      - ./lab5/src:/app/src
+    ports:
+      - "9005:9000"
+    command: npm start
+    restart: always
+
+  mongodb:
+    image: mongo:4.4
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+volumes:
+  mongodb_data:
+
+  

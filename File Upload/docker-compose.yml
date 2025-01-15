@@ -1,0 +1,31 @@
+version: "3.6"
+
+services:
+  lab1:
+    build: ./lab1
+    restart: 'unless-stopped'
+    ports:
+      - "8021:80"
+    volumes: 
+      - ./lab1/src/:/var/www/html/
+  lab2:
+    build: ./lab2
+    restart: 'unless-stopped'
+    ports:
+      - "8022:80"
+    volumes: 
+      - ./lab2/src/:/var/www/html/
+  lab3:
+    build: ./lab3
+    restart: 'unless-stopped'
+    ports:
+      - "8023:80"
+    volumes: 
+      - ./lab3/src/:/var/www/html/
+  lab4:
+    build: ./lab4
+    restart: 'unless-stopped'
+    ports:
+      - "8024:80"
+    volumes: 
+      - ./lab4/src/:/var/www/html/

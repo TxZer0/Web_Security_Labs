@@ -1,0 +1,20 @@
+version: "3.6"
+
+services:
+  mongodb:
+    image: mongo:4.4
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+
+  lab1:
+    build: ./lab1
+    ports:
+      - "8041:3000"
+    depends_on:
+      - mongodb
+
+
+volumes:
+  mongodb_data:

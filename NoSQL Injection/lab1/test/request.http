@@ -1,0 +1,7 @@
+POST http://localhost:8041/login
+Content-Type: application/json
+
+{
+  "username": {"$regex": "^admin"},
+  "password": {"$ne": ""}
+}

@@ -1,0 +1,15 @@
+version: '3.6'
+
+services:
+  lab1:
+    build: ./lab1
+    ports:
+      - "9020:9001"
+  lab2:
+    build: ./lab2
+    ports:
+      - "9021:9002"
+  lab3:
+    build: ./lab3
+    ports:
+      - "9022:9003"
