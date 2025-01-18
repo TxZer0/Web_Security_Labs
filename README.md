@@ -7,12 +7,12 @@
    Docker
 
 ## Installation Instructions
-1. Move to the type of vulnerable you want to work on
+1. Move to the type of vulnerable you want to work on.
 ```bash
    cd type_of_vulnerable
 ```
 
-2. Start the environment
+2. Start the environment.
 ```bash
    docker-compose up --build
 ```
@@ -23,7 +23,7 @@
 ```
 
 ### Note:
-   - Solutions for the lab are provided in the exploit.md file
+   - Solutions for the lab are provided in the exploit.md file.
    - This project is for educational purpose.
 
 ### Contact:
