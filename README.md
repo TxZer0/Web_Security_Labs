@@ -23,9 +23,8 @@
 ```
 
 ### Note:
-  Solutions for the lab are provided in the exploit.md file
-  
-  This project is for educational purpose.
+   - Solutions for the lab are provided in the exploit.md file
+   - This project is for educational purpose.
 
 ### Contact:
   Feel free to reach out with any questions or feedback!  
