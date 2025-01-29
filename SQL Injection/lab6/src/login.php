@@ -20,10 +20,8 @@ function loginHandler($username, $password)
         $_SESSION["username"] = $row["username"];
         if ($username === "admin")
             return "Flag: {LAB-SQL-006}";   
-        elseif($username !== "admin")
-            header('Location: home.php');
         else
-            return "Welcome $username";
+            header('Location: home.php');
     } catch (mysqli_sql_exception $e) {
         return $e->getMessage();
     }
