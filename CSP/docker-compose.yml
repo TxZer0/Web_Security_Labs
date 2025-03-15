@@ -9,7 +9,4 @@ services:
     build: ./lab2
     ports:
       - "9021:9002"
-  lab3:
-    build: ./lab3
-    ports:
-      - "9022:9003"
+
